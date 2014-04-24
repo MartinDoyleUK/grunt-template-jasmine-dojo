@@ -16,11 +16,10 @@
 	],
 	"author": "Martin Doyle (github@martindoyle.com)",
 	"license": "MIT",
-	"peerDependencies": {
-		"grunt-contrib-jasmine": "^0.6.3",
-	},
-	"devDependencies": {
-		"grunt-contrib-jasmine": "^0.6.3",
+	"dependencies": {
 		"lodash": "^2.4.1"
+	},
+	"peerDependencies": {
+		"grunt-contrib-jasmine": "^0.6.0"
 	}
 }

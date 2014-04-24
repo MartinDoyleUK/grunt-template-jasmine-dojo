@@ -74,6 +74,24 @@ grunt.registerTask('test', [
 
 [grunt-contrib-connect]: https://github.com/gruntjs/grunt-contrib-connect
 
+##Sample test
+
+For reference, here's a simple test that uses Dojo code. Note that you do not need to specify any source files in the config, as they can all be loaded via AMD once the dojoConfig has been set.
+
+```js
+describe('MyController', function() {
+	require(['app/controller/MyController'], function(MyController) {
+		it('Can set async value', function(done) {
+			expect(MyController.getCurrentValue()).toBe(null);
+			MyController.setValueAsync('newValue').then(function() {
+				expect(MyController.getCurrentValue()).toBe('newValue');
+				done();
+			});
+		});
+	});
+});
+```
+
 ### Authors / Maintainers
 
 - Martin Doyle (@MartinDoyleUK)

@@ -1,7 +1,9 @@
 Dojo template for Jasmine unit tests
 ===========================
 
-Grunt Jasmine template for Dojo Toolkit, inspired and informed by grunt-template-jasmine-requirejs. Contributors welcome!
+Grunt Jasmine template for Dojo Toolkit, inspired and informed by grunt-template-jasmine-requirejs.
+
+Contributors welcome. Please raise issues and create pull requests as appropriate.
 
 ## Installation
 ```

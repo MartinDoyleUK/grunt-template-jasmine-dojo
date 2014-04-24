@@ -1,0 +1,26 @@
+{
+	"name": "grunt-template-jasmine-dojo",
+	"version": "0.0.3",
+	"description": "Dojo template for grunt-contrib-jasmine",
+	"main": "src/template-jasmine-dojo.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/MartinDoyleUK/grunt-template-jasmine-dojo"
+	},
+	"keywords": [
+		"grunt",
+		"template",
+		"dojo",
+		"jasmine",
+		"test"
+	],
+	"author": "Martin Doyle (github@martindoyle.com)",
+	"license": "MIT",
+	"peerDependencies": {
+		"grunt-contrib-jasmine": "^0.6.3",
+	},
+	"devDependencies": {
+		"grunt-contrib-jasmine": "^0.6.3",
+		"lodash": "^2.4.1"
+	}
+}

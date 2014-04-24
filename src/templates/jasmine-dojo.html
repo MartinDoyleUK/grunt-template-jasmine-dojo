@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<!-- Boilerplate stuff -->
+		<meta charset="utf-8">
+		<title>Jasmine Dojo Specrunner</title>
+
+		<!-- Add in stylesheets -->
+		<% css.forEach(function(style){ %>
+		<link rel="stylesheet" type="text/css" href="<%= style %>">
+		<% }) %>
+
+		<!-- Load the main Jasmine libraries and any helpers -->
+		<%
+			var jasmineScripts = [].concat(scripts.jasmine,scripts.vendor,scripts.helpers,scripts.boot,scripts.reporters);
+			jasmineScripts.forEach(function(scriptSrc) {
+		%>
+		<script type="text/javascript" src="<%= scriptSrc %>"></script>
+		<%
+			});
+		%>
+
+		<!-- Setup the dojoConfig and run dojo -->
+		<script type="text/javascript">
+			var dojoConfig = <%= JSON.stringify(options.dojoConfig) %>;
+		</script>
+		<script type="text/javascript" src="<%- options.dojoFile %>"></script>
+
+		<!-- Load the specs -->
+		<% scripts.specs.forEach(function(scriptSrc) { %>
+		<script type="text/javascript" src="<%= scriptSrc %>"></script>
+		<% }); %>
+
+	</head>
+	<body></body>
+</html>

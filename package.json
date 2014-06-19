@@ -1,6 +1,6 @@
 {
 	"name": "grunt-template-jasmine-dojo",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"description": "Dojo template for grunt-contrib-jasmine",
 	"main": "src/template-jasmine-dojo.js",
 	"repository": {
